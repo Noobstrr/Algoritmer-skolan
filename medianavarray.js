@@ -1,4 +1,7 @@
-function medianOfArray(array){
+function medianOfArray(array){//skapar funktionen
+    array.sort(function(x,y){
+        return x-y;
+    });
     let run = true;
     let iC = 0;
     while(array[iC] != null){
@@ -17,4 +20,4 @@ function medianOfArray(array){
     }
 }
 
-console.log(medianOfArray([1,3,4,5,6,8,8,9]));
+console.log(medianOfArray([18,4,14,6,8,9,9]));
